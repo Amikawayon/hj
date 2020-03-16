@@ -19,7 +19,7 @@
 
       <!-- FORM -->
 
-      <form id="form" class="form mb-5 border border-primary p-2 position-relative ">
+      <form id="form"  class="form mb-5 border border-primary p-2 position-relative ">
         <!-- email --> 
 
         <div class="form-row">
@@ -54,11 +54,11 @@
 
           </small>
         </div>
-        <input type="hidden" name="hiddenInput" value="1">
+        
 
         <!-- submit -->
-        <button id="hidden" type="submit" hidden>catch me if u can</button>
-        <button class="btn btn-success btn-send" type="button" id="btn-send">Отправить форму</button>
+        <button id="hidden" name='hidden' type="submit" class="btn btn-primary" >catch me if u can</button>
+       <!--  <button class="btn btn-success btn-send" type="button" id="btn-send">Отправить форму</button> -->
         
 
 
