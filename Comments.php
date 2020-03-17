@@ -1,5 +1,7 @@
 <?php 
-include_once ROOT . '/Db.php';
+
+include_once dirname(__FILE__) . '/Db.php';
+
 class Comments {
 
 	public static function getComments() {

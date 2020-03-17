@@ -57,7 +57,7 @@
         
 
         <!-- submit -->
-        <button id="hidden" name='hidden' type="submit" class="btn btn-primary" >catch me if u can</button>
+        <input type="button" id="hidden" name='hidden'  class="btn btn-primary" value="Отправить" >
        <!--  <button class="btn btn-success btn-send" type="button" id="btn-send">Отправить форму</button> -->
         
 
@@ -118,7 +118,7 @@
             </tr>
           </thead>
           <tbody id="output">
-            <?php include_once 'store.php'; ?>
+            <?php include_once ROOT . '/insertColumns.php'; ?>
           </tbody>
           
 

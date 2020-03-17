@@ -1,17 +1,11 @@
 <?php 
-include_once ROOT . '/Comments.php';
-
-
-
-
-
-
-
+include_once dirname(__FILE__) . '/Comments.php';
 
 // $name='';
 // $email='';
 // $msg='';
-if (isset($_POST["hidden"])) {
+
+
 	$name = $_POST["name"];
 	$email = $_POST["email"];
 	$msg = $_POST["msg"];
@@ -19,18 +13,12 @@ if (isset($_POST["hidden"])) {
 
 	$arrayRes = json_encode([$msg,$email,$name]);
 
-echo $arrayRes;
+echo($arrayRes);
 
 
-}
-
-else {
-	$comments = Comments::getComments();
-	foreach($comments as $sender) {
-echo "<tr><td colspan='2'>$sender[0]</td><td>$sender[1]</td><td>$sender[2]</td></tr>";
-
-}
 
 
-}
+
+
+
 ?>

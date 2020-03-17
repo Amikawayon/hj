@@ -13,7 +13,7 @@ let hidden = document.getElementById('hidden');
 hidden.addEventListener('click',async (e) => {
   
   // async function ajaxFunc(e) {
-    e.preventDefault();
+    
 
     
     let response = await fetch('/store.php', {
@@ -24,7 +24,7 @@ hidden.addEventListener('click',async (e) => {
     let userComment = await response.json();
     let output = document.getElementById('output');
      output.insertAdjacentHTML('afterBegin',
-     `<tr><td colspan='2'>${userComment.first}</td><td>${userComment.second}</td><td>${userComment.third}</td></tr>`);
+     `<tr><td colspan='2'>${userComment[0]}</td><td>${userComment[1]}</td><td>${userComment[2]}</td></tr>`);
   // }
   // ajaxFunc();
 
