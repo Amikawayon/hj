@@ -1,5 +1,6 @@
 <?php 
 include_once dirname(__FILE__) . '/Comments.php';
+include_once dirname(__FILE__) . '/Db.php';
 
 $name='';
 $email='';

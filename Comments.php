@@ -1,7 +1,5 @@
 <?php 
-
-include_once dirname(__FILE__) . '/Db.php';
-
+include_once ROOT . '/Db.php';
 class Comments {
 
 	public static function getComments() {
@@ -18,7 +16,7 @@ class Comments {
 
 	public function addComment($msg,$email,$name) {
 		$db = Db::getConnection();
-		$res = $db->query("INSERT INTO comments (msg,email,name) "
+		$res = $db->prepare("INSERT INTO comments (msg,email,name) "
 			. "VALUES (:msg, :email, :name) ");
 		$res->bindParam(':msg',$msg,PDO::PARAM_STR);
 		$res->bindParam(':email',$name,PDO::PARAM_STR);
